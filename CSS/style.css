@@ -1,0 +1,339 @@
+body{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container{
+	margin: 0 auto;
+	width: 80%;
+}
+
+#menu{
+	text-align: center;
+	background-color: black;
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	width: 80%;
+	opacity: 0.8;
+	z-index: 5;
+}
+
+#menu ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+#menu li{
+	display: inline-block;
+}
+
+#menu a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	width: 200px;
+	padding: 5px;
+}
+
+#menu a:hover{
+	color: lightgrey;
+	background-color: grey;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.logo {
+	position: relative;
+	right: 100px;
+}
+
+.logo a:hover{
+	background-color: #ffffff;
+}
+
+.video, .reason, .freeLesson{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.header{
+	margin-top: 200px;
+	width: 100%;
+}
+
+.reason li, .freeLesson li{
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+h3{
+	font-size: 35px;
+}
+
+.whyProgramming{/*Раздел "Зачем изучать программирование*/
+	width: 100%;
+	margin-top: 90px;
+}
+
+.whyProgramming .punkti{/*Пункты раздела "Зачем изучать программирование*/	
+	width: 48%;
+	display: inline-block;
+	padding: 10px;
+}
+
+.whyProgramming .punkti img{/*Картинки раздела "Зачем изучать программирование"*/
+	width: 20%;
+	float: left;
+	padding: 15px;
+	margin-top: 10px;
+}
+
+.whyProgramming .punkti .skill{/*Навыки из пунктов раздела "Зачем изучать программирование*/
+	font-size: 24px;
+	color: purple;
+	font-weight: bold;
+}
+
+.whyProgramming .punkti p{/*Описание пунктов раздела "Зачем изучать программирование"*/
+	display: block;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.whyProgramming h3{
+	text-align: center;/*Названия пунктов раздела "Зачем изучать программирование"*/
+}
+
+#courses{
+	margin-top: 90px auto;/*Раздел "Наши направления"*/
+	width: 100%;
+}
+
+h2{/*Заголовки разделов сайта*/
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 40px;
+	background-color: cyan; 
+}
+
+#courses .course .courseName{/*Названия курсов*/
+	font-size: 30px;
+}
+
+#courses .course .n_mirror{/*картинка слева в курсах*/
+	float: left;
+	width: 40%;
+	margin-right: 50px;
+	box-sizing: border-box;
+	position: relative;
+	top: 30px;
+}
+
+#courses .course .mirror{/*картинка справа в курсах*/
+	float: right;
+	width: 40%;
+	margin-left: 45px;
+	box-sizing: border-box;
+	position: relative;
+	top: 30px;
+}
+
+#courses .course{/*Дивы для курсов (для картинки, названия курса и его описания"*/
+	width: 49.7%;
+	padding: 0 30px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.more{/*кнопка подробрнее в курсах*/
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+.more a{/*ссылка в кнопке подробнее*/
+	text-decoration: none;
+	font-size: 20px;
+	transition: 1s;
+	display: inline-block;
+}
+
+.more a:hover{
+	transform: translateX(20px);
+}
+
+#courses hr{/*горизонтальная линия между курсами*/
+	width: 100%;
+	border: 4px solid black;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin: 40px 0;
+}
+
+/*название курса*/
+#courses p{
+	text-align: center;/*выровняли по центру*/
+	margin-top: 50px;/*добавили внешний отступ => сдвинули пониже*/
+}
+
+/*кнопки для записи на бесплатный урок + отзывы*/
+button{
+	padding: 10px 20px;/*добавили воздух*/
+	border: 2px solid grey;/*добавили рамку*/
+	cursor: pointer;/*сделали другой курсор при наведении*/
+}
+
+button a{
+	text-decoration: none;
+	color: black;
+}
+
+/*описание вводного урока и видео*/
+.freeLesson, #courses .video{
+	margin-top: 40px;/*отодвинули описание и видео от верха*/
+	vertical-align: top;/*сделали вертикальное выравнивание по верху для видоса и описания бесплатного урока*/
+}
+
+/*раздел с отзывами*/
+#otzivy{
+	text-align: center; /*выровняли содержимое по центру*/
+}
+
+/*слайдер для отзывов*/
+.sim-slider {
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 20px auto;
+  padding: 30px 50px;
+  background-color: white;
+  height: 500px;
+  position: relative;
+}
+
+/*список с отзывами*/
+.sim-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+/*сами отзывы*/
+.sim-slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+/*стили кнопок для слайдера*/
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+
+/*стили отдельно для стрелки влево*/
+div.sim-slider-arrow-left {
+  left: 10px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+}
+
+/*для стрелки вправо*/
+div.sim-slider-arrow-right {
+  right: 10px;
+  top: 40%;
+  display: block;
+  background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+}
+
+/*стили кнопок слайдера при наведении курсора*/
+div.sim-slider-arrow-left:hover {
+  opacity: 1.0;
+}
+
+div.sim-slider-arrow-right:hover {
+  opacity: 1.0;
+}
+
+/*див для точек под фото*/
+div.sim-slider-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  text-align: center;
+}
+
+/*сами точки под фото*/
+span.sim-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  padding: 0;
+  display: inline-block;
+  background-color: #BBB;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*поля для ввода в форме*/
+input, textarea{
+	width: 300px;
+	padding: 15px ; /*добавили «воздух» внутри поля ввод*/
+	margin-top: 10px; /*оттолкнули поля ввода друг от друга*/
+	border: 2px solid black; /* даем всем полям ввода рамку для красоты*/
+}
+
+/*сама форма*/
+form{
+	max-width: 850px;
+	min-width: 400px;
+	margin: 50px auto; /*выставили по центру*/
+	text-align: center; /*поставили все элементы внутри по центру*/
+	border-radius: 8px; /*закруглили углы*/
+}
+
+/*название раздела формы*/
+legend{
+	font-size: 50px;
+}
+
+/*кнопка отправки данных*/
+input[type=submit]{
+	cursor: pointer;
+}
+
+/*подвал сайта*/
+footer{
+	background-color: black;
+	color: white;
+	padding: 30px 0;
+	text-align: center;
+}
+
+/*ссылка в подвале сайта*/
+footer a{
+	color: pink;
+	text-decoration: none;
+}
+
